@@ -4,7 +4,7 @@ import plotly.express as px
 import numpy as np
  
 
-st.set_page_config(page_title="Dashboard ", page_icon="📈", layout="wide")  
+st.set_page_config(page_title="064 Farhan Bram", page_icon="📈", layout="wide")  
 st.header("Percentile, 5 number summary, Categorical")
 st.markdown("##")
  
@@ -59,7 +59,7 @@ def ad():
     st.dataframe(df['SALES'].describe(),use_container_width=True)
 
  with c2:
-   st.subheader("Total Sales")
+   st.subheader("Total Penjualan")
    st.metric(label='USD', value=f"{np.sum(df['SALES'], 0):,.2f}",help="sum",delta=np.average(df.SALES),
     delta_color="inverse")
     
